@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQM Complex Demo</title>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+    <link rel="stylesheet" href="http://example.gajotres.net/iscrollview/jquery.mobile.iscrollview.css" />
+    <link rel="stylesheet" href="http://example.gajotres.net/iscrollview/jquery.mobile.iscrollview-pull.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.4.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://example.gajotres.net/iscrollview/iscroll.js"></script>
+    <script src="http://example.gajotres.net/iscrollview/jquery.mobile.iscrollview.js"></script>
+    //<script type="text/javascript" charset="utf-8" src="PushNotification.js"></script>
+    <script src="script.js"></script>
+    <script src="cordova.js"></script>
+</head>
+
+<body>
+<div data-role="page" id="home">
+    <div data-theme="a" data-role="header">
+    	<h3>
+    		LBS DEMO
+    	</h3>
+    </div>
+    <div data-role="content">
+    	<h2> Aktuelle Auftraege </>
+    	<div id="get-tasks-btn" data-role="main" class="ui-content">
+            <button class="ui-btn">Get Tasks</button>
+        </div>
+    	<div class="example-wrapper" data-iscroll>
+        	<ul data-role="listview" id="task-list" data-theme="a">
+ 
+        	</ul>
+      	</div>
+      	<div data-role="content">
+      		<ul data-role="listview" id="task-data" data-theme="a">
+ 
+      		</ul>
+    	</div>
+    	<div id="http-GET-btn" data-role="main" class="ui-content">
+            <button class="ui-btn">Http GET</button>
+        </div>
+        <div id="add-location-btn" data-role="main" class="ui-content">
+            <button class="ui-btn">Get Location</button>
+        </div>
+        <div id="change-pic-btn" data-role="main" class="ui-content">
+            <button class="ui-btn">Take Photo</button>
+        </div>
+        <div id="get-pic-btn" data-role="main" class="ui-content">
+            <button class="ui-btn">Get Picture</button>
+        </div>
+        <br Picture />
+                    <img style="display:none;" id="image" src=""/>
+        <div id="barcode-scan-btn" data-role="main" class="ui-content">
+            <button class="ui-btn">Scan Barcode</button>
+        </div>
+        <div id="add-files-btn" data-role="main" class="ui-content">
+            <button class="ui-btn">Add 100000 files</button>
+        </div>
+        <div id="search-file-btn" data-role="main" class="ui-content">
+            <button class="ui-btn">Search file</button>
+        </div>
+        <form>
+        	<br>search index<br>
+			<input type="number" id="searchIndex">
+		</form>
+		<div id="nav-to-loc-btn" data-role="main" class="ui-content">
+            <button class="ui-btn">Navigate to Location</button>
+        </div>
+        <form>
+        	<br>location<br>
+			<input type="text" id="locationText">
+		</form>
+        <div id="init-nfc-btn" data-role="main" class="ui-content">
+            <button class="ui-btn">Init NFC</button>
+        </div>
+        <div id="register-push-btn" data-role="main" class="ui-content">
+            <button class="ui-btn">Register Push</button>
+        </div>
+        <div class="example-wrapper" data-iscroll>
+            <ul data-role="listview" id="app-status-ul" data-theme="a">
+
+            </ul>
+        </div>
+        
+        
+</div>
+
+</body>
+
+</html>
